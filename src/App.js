@@ -2,28 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Button } from "antd";
-// import "antd/dist/antd.css";
-
-
+import "antd/dist/antd.css";
+import Login from './pages/login/login';
+import Tabbar from './component/tabbar/tabbar'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <Button type="primary">按钮</Button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Tabbar />
     </div>
   );
 }

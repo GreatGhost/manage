@@ -1,0 +1,21 @@
+.tabbar{
+    display: flex;
+    align-items: center;
+    .tab-item{
+        position: relative;
+        flex:1;
+        background: #fff;
+        height: 40px;
+        &.active::before{
+            content: '';
+            display: block;
+            position: absolute;
+            left:50%;
+            bottom:0;
+            transform: translateX(-50%);
+            height:2px;
+            width:80px;
+            background:#f2f;
+        }
+    }   
+}
